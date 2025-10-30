@@ -1,0 +1,41 @@
+SELECT SUM(preco) AS "Faturamento total" FROM locacoes;
+SELECT SUM(preco) AS "Faturamento total" FROM locacoes where status = "entregue";
+
+SELECT AVG(preco) AS "Preço médio" FROM filmes WHERE categoria = "Comédia";
+SELECT AVG(preco) AS "Preço médio" FROM locacoes WHERE status = "pendente";
+
+SELECT COUNT(*) AS "Filmes cadastrados" FROM filmes;
+SELECT COUNT(*) AS "Locações feitas" FROM locacoes WHERE data_locacao >= "2025-01-01";
+
+SELECT MAX(preco) AS "Mais caro" FROM filmes;
+SELECT MAX(data_locacao) AS "Mais recente" FROM locacoes;
+
+SELECT MIN(preco) AS "Menor valor de filmes de Terror" FROM filmes WHERE categoria = "Terror";
+SELECT MIN(data_locacao) AS "Mais antiga" FROM locacoes;
+
+SELECT CONCAT(cliente_id, " - ", filme_id) AS "ID do cliente e ID do filme" FROM locacoes;
+SELECT CONCAT(" O cliente ", cliente_id, " alugou o filme ", filme_id," na data de ", data_locacao) AS "ID do cliente e ID do filme" FROM locacoes;
+
+SELECT nome, LENGTH(nome) AS Caracteres FROM clientes;
+SELECT titulo FROM filmes WHERE LENGTH(titulo) > 15;
+
+SELECT LOWER(titulo) AS "Titulo minusculo" FROM filmes;
+SELECT LOWER(nome) AS "Nome minusculo" FROM clientes;
+
+SELECT UPPER(nome) AS "Nome maiusculo" FROM clientes;
+SELECT UPPER(categoria) AS "Categoria maiusculo" FROM filmes;
+
+SELECT ROUND(preco) AS "Preço inteiro" FROM filmes;
+SELECT ROUND(preco, 1) AS "Preço com casa decimal" FROM filmes;
+
+SELECT POW(preco, 2) AS "Preço ao quadrado" FROM filmes;
+SELECT 2, POW(2, id) AS "2 elevado ao id do cliente" FROM clientes;
+
+SELECT * FROM clientes WHERE MOD(id, 2) = 0;
+SELECT * FROM filmes WHERE MOD(id, 3) = 0;
+
+SELECT NOW() AS "Data e hora atual";
+SELECT * FROM locacoes WHERE data_locacao < CURDATE();
+
+SELECT DAY(data_locacao) AS dia FROM locacoes;
+SELECT data_locacao, filme_id FROM locacoes WHERE MONTH(data_locacao) = 1;

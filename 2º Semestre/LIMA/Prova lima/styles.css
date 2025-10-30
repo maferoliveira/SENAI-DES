@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Felix Titling;
+    background: #b2dcab;
+    line-height: 3;
+}
+
+header {
+    background: #76b36d;
+    color: #492f03;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 1.5px;
+    font-style: italic;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-style: normal;
+    background-color: #c6d5c9;
+    color: #0a3a12;
+    padding: 5px 100px;
+    display: inline-block;
+    box-shadow: 0 2px 20px #071801; 
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #0f3505;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    font-style: normal;
+    transition: color 0.1s ease;
+}
+
+nav ul li a:hover {
+    color: #c1fccc;
+    box-decoration-break: clone;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #043209;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.8);
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: none;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    box-shadow: #ecc9c9;
+}
+.foto-filme {
+    width: 400px;
+    height: 250px;
+    background: none;
+    box-shadow: 0 0.5px 20px #23640c; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.sinopse-filme{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: none;
+}

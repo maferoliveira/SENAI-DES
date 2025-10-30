@@ -1,0 +1,84 @@
+
+body{
+    background-color: #7eaba6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4A6A63;
+}
+
+header .logo{
+    width: 40px;
+    height: auto;
+    border-radius: 50px;
+}
+
+header .titulo{
+    margin: 10px;
+    flex: 1;
+    text-align: left;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+header .usuario{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chamados{
+    background-color: #4A6A63;
+    border-radius: 20px;
+    margin: 30px;
+    display: block;
+    width: auto;
+    text-align: center;
+}
+p,b{
+    color: #4A6A63;
+}
+.container{
+    background-color: #1c4038;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.retangulo{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+img{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+footer{
+    background-color: #fff;
+    color: #4A6A63;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 10px;
+}

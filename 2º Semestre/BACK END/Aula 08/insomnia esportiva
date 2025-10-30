@@ -1,0 +1,373 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1755774012415
+  modified: 1755774012415
+  description: ""
+collection:
+  - name: Biblioteca
+    meta:
+      id: fld_ee40ed58615c4fe1b3dc7b69a70b4fc8
+      created: 1755785831657
+      modified: 1755785831657
+      sortKey: -1755785831657
+      description: ""
+    children:
+      - name: Usuarios
+        meta:
+          id: fld_4b7fe50bc972439dba8afddc0049b5cc
+          created: 1755785870140
+          modified: 1755785870140
+          sortKey: -1755785870140
+          description: ""
+      - name: Livros
+        meta:
+          id: fld_7d05ec4533594af79785cae2f74dcd00
+          created: 1756389271634
+          modified: 1756389271634
+          sortKey: -1756389271634
+          description: ""
+  - name: Musicas app
+    meta:
+      id: fld_ffbbe104d7bf47579ba4e5d1e4125b14
+      created: 1756992194221
+      modified: 1756992194221
+      sortKey: -1756992194221
+      description: ""
+    children:
+      - name: Artistas
+        meta:
+          id: fld_627e0a207c514267af4daf6c57c2f358
+          created: 1756992250467
+          modified: 1756992250467
+          sortKey: -1756992250467
+          description: ""
+      - name: Albuns
+        meta:
+          id: fld_d30d2d8420b04cecb85c39ced8006938
+          created: 1756992443620
+          modified: 1756992443620
+          sortKey: -1756992222344
+          description: ""
+      - name: Faixas
+        meta:
+          id: fld_02ec878cbab44bb2ac50e66b2f2c112e
+          created: 1756992487042
+          modified: 1756992487042
+          sortKey: -1756992208282.5
+          description: ""
+      - name: Playmsc
+        meta:
+          id: fld_13a5926618974e248b5557aa7f774230
+          created: 1756992503920
+          modified: 1756992503920
+          sortKey: -1756992201251.75
+          description: ""
+  - name: Loja
+    meta:
+      id: fld_bebc1c9fd720475f8aedb7d3fa835cba
+      created: 1758200929141
+      modified: 1758200972906
+      sortKey: -1758200929141
+      description: ""
+    children:
+      - name: Clientes
+        meta:
+          id: fld_e625ce0cada34293bd7d96ae3589bfbd
+          created: 1758200964488
+          modified: 1758200964488
+          sortKey: -1758200964488
+          description: ""
+      - name: Produtos
+        meta:
+          id: fld_0c25aaf83f5343caba4ec71d1c50ac63
+          created: 1758200982347
+          modified: 1758201995875
+          sortKey: -1758200982347
+          description: ""
+      - name: Pedidos
+        meta:
+          id: fld_18027c6c5a2d4c36a5bfdc76576a9849
+          created: 1758200991725
+          modified: 1758203326615
+          sortKey: -1758200991725
+          description: ""
+  - name: Locadora
+    meta:
+      id: fld_f94b08636b7b4b6ead806b134801835f
+      created: 1758807618173
+      modified: 1758807618173
+      sortKey: -1758807618173
+      description: ""
+    children:
+      - name: Clientes
+        meta:
+          id: fld_ae3177f2fd49498bb7f11a72e263a789
+          created: 1759403515484
+          modified: 1759403515484
+          sortKey: -1759403515484
+          description: ""
+      - name: Filmes
+        meta:
+          id: fld_1bdeb811f49641449d9274c71bd2d281
+          created: 1759403524322
+          modified: 1759403524322
+          sortKey: -1759403524322
+          description: ""
+      - name: Locações
+        meta:
+          id: fld_703dc23466cc4430ad8d3092371831a3
+          created: 1759403533617
+          modified: 1759403533617
+          sortKey: -1759403533617
+          description: ""
+  - name: Loja esportiva
+    meta:
+      id: fld_2c5724930a2e4102a4ed0db8aadf3c86
+      created: 1760032065088
+      modified: 1760032065088
+      sortKey: -1760032065088
+      description: ""
+    children:
+      - name: Clientes
+        meta:
+          id: fld_7c221dcfa75f4c3e9d46b6ca63ed9e83
+          created: 1760032078737
+          modified: 1760032078737
+          sortKey: -1760032078737
+          description: ""
+        children:
+          - url: http://localhost:3000/cliente
+            name: Cadastrar cliente
+            meta:
+              id: req_82dc318d919041f294e128434e95c92c
+              created: 1760032113399
+              modified: 1760033559570
+              isPrivate: false
+              description: ""
+              sortKey: -1760032113399
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                "cpf": "214-562-547-03",
+                "nome": "Laura Barbara Silvana",
+                "email": "laurabarb@gmail.com",
+                "telefone": "(19)99874-6532"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/clientes
+            name: Listar clientes
+            meta:
+              id: req_7e37dc71efb645aa883733f937caf25f
+              created: 1760033563424
+              modified: 1760033607029
+              isPrivate: false
+              description: ""
+              sortKey: -1760033563424
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/cliente/3
+            name: Excluir cliente
+            meta:
+              id: req_df01f27994cd44faa4fdebbed3f5c1ef
+              created: 1760033621632
+              modified: 1760033677373
+              isPrivate: false
+              description: ""
+              sortKey: -1760033621632
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/cliente
+            name: Atualizar cliente
+            meta:
+              id: req_7264101f742f4407af6977f9878bf79a
+              created: 1760033729419
+              modified: 1760033932497
+              isPrivate: false
+              description: ""
+              sortKey: -1760033729419
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {"id": 2,
+                "cpf":"214-548-658-01",
+                "nome": "Pietra Moraes",
+                "email": "piemoraes@gmail.com",
+                "telefone": "(19)58745-5214"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Estoque
+        meta:
+          id: fld_9ce339b4dab8470dbe696a2856098fee
+          created: 1760032088414
+          modified: 1760032088414
+          sortKey: -1760032088414
+          description: ""
+        children:
+          - url: http://localhost:3000/estoque/1
+            name: Buscar estoque
+            meta:
+              id: req_0ffc4c1c07d545a48b0d2399181f0601
+              created: 1760034045410
+              modified: 1760034728512
+              isPrivate: false
+              description: ""
+              sortKey: -1760034045410
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/estoque
+            name: Listar estoque
+            meta:
+              id: req_10aef16a71a84ae3b927d51084f031b4
+              created: 1760034980616
+              modified: 1760035001046
+              isPrivate: false
+              description: ""
+              sortKey: -1760034980616
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/estoque
+            name: Cadastrar estoque
+            meta:
+              id: req_179ebc1c0c3e4583ba03b8c6cf6f594f
+              created: 1760035006540
+              modified: 1760036073930
+              isPrivate: false
+              description: ""
+              sortKey: -1760035006540
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	 
+                		"nome": "Bicicleta Amark",
+                		"equipamento_id": 2,
+                		"quantidade_disponivel": 20
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/estoque
+            name: Atualizar estoque
+            meta:
+              id: req_15cdee0e40db4da9a6354672931066a0
+              created: 1760036323280
+              modified: 1760039344730
+              isPrivate: false
+              description: ""
+              sortKey: -1760036323280
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	  "id": 1,
+                		"nome": "Teste",
+                		"equipamento_id": 2,
+                		"quantidade_disponivel": 12
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755785026700
+    modified: 1755785026700
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755785026475
+    modified: 1755785026475
+    isPrivate: false

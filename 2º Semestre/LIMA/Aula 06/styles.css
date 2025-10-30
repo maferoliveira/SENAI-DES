@@ -1,0 +1,115 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+}
+header{
+    background-color: #146974;
+    color:#fff;
+    padding: 20px;
+    text-align: center;
+}
+header h1{
+    margin: 0;
+    font-size: 28px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.tabela{
+    width: 90%;
+    max-width: 1000px;
+    background: #89c5bd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgb(8, 85, 84);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.tabela h2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #146974;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background: #1e555c;
+    color: #fff;
+}
+thead th{
+    padding: 14px;
+    text-align: left;
+    font-size: 16px;
+}
+td img {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #32626d;
+    display: flex;
+    justify-content: center;
+
+}
+tbody tr:nth-child(odd){background-color: #b6d5da;}
+tbody tr:nth-child(even){background-color: #bcc7c9;}
+
+footer{
+    display: flex;
+    justify-content: right;
+}
+tbody td{
+    padding: 12px 14px;
+    font-size: 15px;
+}
+tbody td a{
+    color: #146974;
+    text-decoration: none;
+    font-weight: bold;
+}
+tbody td a:hover{
+    color:#32626d;
+    text-decoration: underline;
+}
+tbody tr{
+    transition: background 0.3s, transform 0.2s;
+}
+tbody tr:hover{
+    transform:scale(1.01);
+    filter:brightness(0.95);
+}
+.preco{
+    color: rgb(27, 116, 107);
+    font-weight: bold;
+}
+.estoque{
+    font-weight: bold;
+}
+.estoque.baixo{
+    color: rgb(170, 2, 2);
+}
+.estoque.alto{
+    color: rgb(10, 148, 19);
+}

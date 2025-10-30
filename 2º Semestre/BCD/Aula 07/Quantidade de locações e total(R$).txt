@@ -1,0 +1,4 @@
+Quantidade de locações e total(R$) por status(locacoes)
+Quantidade de locações por cliente e status(locações)
+QntdLocETotalPorStatus
+QntdLocClienteStatus

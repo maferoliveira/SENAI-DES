@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(84, 145, 186);
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+header{
+    background-color: rgb(18, 2, 113);
+    padding: 10px 0;
+    text-align: center;
+
+}
+header h1{
+    margin: 0;
+    font-family: Courier;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(23, 22, 120);
+}
+nav ul li{
+    list-style: none;
+    padding: 0 40px;
+    display: inline;
+    margin: 0 10px;
+    text-align: center;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-family: monospace;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+ .banner{
+    text-align: center;
+    background-color: rgb(11, 2, 94);
+    padding: 20px 0;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+ section {
+    padding: 20;
+    margin: 0 10px;
+    text-align: center;
+ }
+ .cartao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(16, 3, 99);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 600px;
+    height: auto;
+    vertical-align: top;
+    background-color: rgb(27, 30, 123);
+    box-shadow: 0 4px 8 px rgb(17, 66, 10);
+    transition: 0,5s ease,box-shadow 0,5s ease;
+    
+ }
+ .cartao:hover{
+    transform:translateZ(0px);
+    box-shadow: 0 10px 20px rgb(0, 4, 84);
+ }
+ .cartao img{
+    width: 100%;
+    border-radius: 10px;
+ }
+ 
+ .cartaop{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(16, 3, 99);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    vertical-align: top;
+    background-color: rgb(27, 30, 123);
+    box-shadow: 0 4px 8 px rgb(17, 66, 10);
+    transition: 0,5s ease,box-shadow 0,5s ease;
+    
+ }
+ .cartaop:hover{
+    transform:translateZ(0px);
+    box-shadow: 0 10px 20px rgb(0, 4, 84);
+ }
+ .cartaop img{
+    width: 100%;
+    border-radius: 10px;
+ }
+ #titulo{
+    color:rgb(11, 0, 107);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgb(1, 2, 84);
+ }
+ a{
+   color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(16, 3, 99);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    vertical-align: top;
+    background-color: rgb(27, 30, 123);
+    box-shadow: 0 4px 8 px rgb(17, 66, 10);
+    transition: 0,5s ease,box-shadow 0,5s ease;
+ }

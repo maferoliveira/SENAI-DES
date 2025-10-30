@@ -18,14 +18,14 @@ const listarpaciente = async (req, res) => {
     try {
         const user = req.headers('user');
         if(user.cargo === 'administrador'){
-            const [paciente] = await db.query("SELECT * FROM paciente");
+            const [paciente] = await db.query("SELECT * FROM pacientes");
             res.status(200).json(paciente);
         }else if(user.cargo === 'atendente'){
             const [paciente] = await db.query("SELECT id, nome, telefone FROM pacientes");
             res.status(200).json(paciente);
         }else{
-            const medico = req.header('id_equipe');
-            const [paciente] = await db.query("SELECT p.id, p.nome, p.telefone FROM pacientes p JOIN consultas c ON p.id = c.id_paciente WHERE c.id_equipe = ?", [medico]);
+            const medico = req.header('id_usuario');
+            const [paciente] = await db.query("SELECT p.id, p.nome, p.telefone FROM pacientes p JOIN consultas c ON p.id = c.id_paciente WHERE c.id_usuario = ?", [medico]);
             res.status(200).json(paciente);
         }
     } catch (error) {
@@ -37,7 +37,7 @@ const listarpaciente = async (req, res) => {
 const buscarpacienteID = async (req, res) => {
     const { id } = req.params;
     try {
-        const [paciente] = await db.query("SELECT * FROM paciente WHERE id_paciente = ?", [id]);
+        const [paciente] = await db.query("SELECT * FROM pacientes WHERE id_paciente = ?", [id]);
         if (paciente.length === 0) {
             return res.status(404).json({ message: "Paciente não encontrado." });
         }
@@ -56,7 +56,7 @@ const atualizarPaciente = async (req, res) => {
     }
 
     try {
-        const [result] = await db.query("UPDATE paciente SET nome = ?, telefone = ? WHERE id_paciente = ?", [nome, telefone, id]);
+        const [result] = await db.query("UPDATE pacientes SET nome = ?, telefone = ? WHERE id_paciente = ?", [nome, telefone, id]);
         if (result.affectedRows === 0) {
             return res.status(404).json({ message: "Paciente não encontrado." });
         }
@@ -70,7 +70,7 @@ const atualizarPaciente = async (req, res) => {
 const deletarPaciente = async (req, res) => {
     const { id } = req.params;
     try {
-        const [result] = await db.query("DELETE FROM paciente WHERE id_paciente = ?", [id]);
+        const [result] = await db.query("DELETE FROM pacientes WHERE id_paciente = ?", [id]);
         if (result.affectedRows === 0) {
             return res.status(404).json({ message: "Paciente não encontrado." });
         }

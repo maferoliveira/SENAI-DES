@@ -1,0 +1,329 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1755774012415
+  modified: 1755774012415
+  description: ""
+collection:
+  - name: Biblioteca
+    meta:
+      id: fld_ee40ed58615c4fe1b3dc7b69a70b4fc8
+      created: 1755785831657
+      modified: 1755785831657
+      sortKey: -1755785831657
+      description: ""
+    children:
+      - name: Usuarios
+        meta:
+          id: fld_4b7fe50bc972439dba8afddc0049b5cc
+          created: 1755785870140
+          modified: 1755785870140
+          sortKey: -1755785870140
+          description: ""
+      - name: Livros
+        meta:
+          id: fld_7d05ec4533594af79785cae2f74dcd00
+          created: 1756389271634
+          modified: 1756389271634
+          sortKey: -1756389271634
+          description: ""
+  - name: Musicas app
+    meta:
+      id: fld_ffbbe104d7bf47579ba4e5d1e4125b14
+      created: 1756992194221
+      modified: 1756992194221
+      sortKey: -1756992194221
+      description: ""
+    children:
+      - name: Artistas
+        meta:
+          id: fld_627e0a207c514267af4daf6c57c2f358
+          created: 1756992250467
+          modified: 1756992250467
+          sortKey: -1756992250467
+          description: ""
+      - name: Albuns
+        meta:
+          id: fld_d30d2d8420b04cecb85c39ced8006938
+          created: 1756992443620
+          modified: 1756992443620
+          sortKey: -1756992222344
+          description: ""
+      - name: Faixas
+        meta:
+          id: fld_02ec878cbab44bb2ac50e66b2f2c112e
+          created: 1756992487042
+          modified: 1756992487042
+          sortKey: -1756992208282.5
+          description: ""
+      - name: Playmsc
+        meta:
+          id: fld_13a5926618974e248b5557aa7f774230
+          created: 1756992503920
+          modified: 1756992503920
+          sortKey: -1756992201251.75
+          description: ""
+  - name: Loja
+    meta:
+      id: fld_bebc1c9fd720475f8aedb7d3fa835cba
+      created: 1758200929141
+      modified: 1758200972906
+      sortKey: -1758200929141
+      description: ""
+    children:
+      - name: Clientes
+        meta:
+          id: fld_e625ce0cada34293bd7d96ae3589bfbd
+          created: 1758200964488
+          modified: 1758200964488
+          sortKey: -1758200964488
+          description: ""
+        children:
+          - url: http://localhost:3000/clientes/215-415-368.02
+            name: Buscar
+            meta:
+              id: req_a34e03d7ad4c4ca3a567b4b5d64a9ab7
+              created: 1758201014250
+              modified: 1758201878361
+              isPrivate: false
+              description: ""
+              sortKey: -1758201014250
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/clientes
+            name: Cadastrar
+            meta:
+              id: req_1c376dab6ffe4aa1a0b18c0490a5727a
+              created: 1758203186581
+              modified: 1758203244613
+              isPrivate: false
+              description: ""
+              sortKey: -1758203186581
+            method: POST
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Produtos
+        meta:
+          id: fld_0c25aaf83f5343caba4ec71d1c50ac63
+          created: 1758200982347
+          modified: 1758201995875
+          sortKey: -1758200982347
+          description: ""
+        children:
+          - url: http://localhost:3000/produtos/1
+            name: Buscar
+            meta:
+              id: req_dee742ee719449459346dbe23f357723
+              created: 1758201996942
+              modified: 1758202488073
+              isPrivate: false
+              description: ""
+              sortKey: -1758201996942
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/produtos/1
+            name: Apagar
+            meta:
+              id: req_aacb2e518b404f89af9fc950ca7baa71
+              created: 1758202020451
+              modified: 1758202502123
+              isPrivate: false
+              description: ""
+              sortKey: -1758202020451
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/produtos/2
+            name: Atualizar
+            meta:
+              id: req_464a77baf56f49dc95c915c99deb4f4f
+              created: 1758202031958
+              modified: 1758203782627
+              isPrivate: false
+              description: ""
+              sortKey: -1758202031958
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	 "codigo": "1",
+                    "Nome" : "Blusa 100% algodão sustentável",
+                    "Descrição" : "Tecido leve e confortável",
+                    "Preço" : "R$:149,90",
+                    "Estoque" : "160"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/produtos
+            name: Cadastrar
+            meta:
+              id: req_f5cddf2f351a4e08aadf3307b52a6604
+              created: 1758203291008
+              modified: 1758203320739
+              isPrivate: false
+              description: ""
+              sortKey: -1758203291008
+            method: POST
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Pedidos
+        meta:
+          id: fld_18027c6c5a2d4c36a5bfdc76576a9849
+          created: 1758200991725
+          modified: 1758203326615
+          sortKey: -1758200991725
+          description: ""
+        children:
+          - url: http://localhost:3000/pedidos/2
+            name: Atualizar
+            meta:
+              id: req_08a98b85fc59466eb793fb13b91e561f
+              created: 1758202776387
+              modified: 1758204004636
+              isPrivate: false
+              description: ""
+              sortKey: -1758202776387
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	 "codigo":"2",
+                    "Produto":"Mochila",
+                    "Quantidade":"1",
+                    "Data": "2025/03/20",
+                    "status":"entregue"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedidos
+            name: Cadastrar
+            meta:
+              id: req_4dff07a04c574bd7b4bd0aea43e669ad
+              created: 1758203327382
+              modified: 1758203738947
+              isPrivate: false
+              description: ""
+              sortKey: -1758203327382
+            method: POST
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedidos
+            name: Listar
+            meta:
+              id: req_f977f9852bdb4d138d3f5508ad1c4ed2
+              created: 1758204635429
+              modified: 1758204828989
+              isPrivate: false
+              description: ""
+              sortKey: -1758204635429
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755785026700
+    modified: 1755785026700
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755785026475
+    modified: 1755785026475
+    isPrivate: false

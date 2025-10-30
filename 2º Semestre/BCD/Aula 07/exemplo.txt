@@ -1,0 +1,12 @@
+use novaloja;
+SELECT (quantidade * preco_unitario) AS "Valot total" from pedidos;
+
+SELECT pedidos.*, (quantidade * preco_unitario) AS "Valor total" from pedidos;
+
+SELECT  SUM((quantidade * preco_unitario)) AS "Faturamento" FROM pedidos 
+WHERE produto = "Arroz";
+
+SELECT SUM(quantidade) AS "Itens vendidos", SUM((quantidade * preco_unitario)) AS "Faturamento" FROM pedidos WHERE produto = "Arroz";
+
+SELECT SUM(quantidade) AS "Itens vendidos", SUM((quantidade * preco_unitario)) AS "Faturamento" FROM pedidos WHERE produto = "Arroz" AND month(data_pedido) = 3;
+

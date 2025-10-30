@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <font face="Broadway" size="5">
+    <title>Formulário</title>
+</head>
+<center><h1>Lanchonete Seu Zé</h1>
+<body>
+<hr>
+<h3>Faça seu pedido abaixo</h3>
+</center></font>
+<form action="" method="">
+<p> <label for ="nome" > Nome Completo: </label>
+    <input type = "text" id="Nome" placeholder="Insira aqui" required/> 
+</p>
+<p>
+    <label for="datanasc">Data de Nascimento: </label>
+    <input id = "datanasc" type="date" required/>
+</p>
+<p> <label for="email">E-mail: </label>
+<input type="email" id="email" placeholder="Insira aqui" required/>
+</p>
+<p>
+    <label for="telefone">Telefone: </label>
+    <input id = "telefone" type="tel" placeholder="Insira aqui" required/>
+</p>
+<p>
+    <label for="indica">Você nos indicaria?</label>
+    <input id = "indica" type="number" min="1" max="5"/>
+</p>
+<p>
+    <label for="cor">Cor Favorita: </label>
+    <input id="cor" type="color" />
+</p>
+<p>
+    <label for="volume">Qual volume você deseja sua música? </label>
+    <input id="volume" type="range" min="0" max="100" value ="50" oninput="valorVolume.textContent = this.value"/>
+    <span id="valorVolume">50</span>
+</p>
+<style>
+    #volume {
+        accent-color: green;
+    }
+    </style>
+<fieldset>
+    <legend>Gênero</legend>
+    
+    <label for="masc">Masculino</label>
+    <input type="radio" name="genero" id="masc" >
+    <br>
+    <label for="fem">Feminino</label>
+    <input type="radio" name="genero" id="fem">
+    <style>
+        #masc {
+            accent-color: rgb(13, 0, 255);
+        }
+        #fem {
+            accent-color: rgb(234, 0, 105);
+        }
+    </style>
+    </fieldset>
+    <fieldset>
+        <legend>Monte seu lanche</legend>
+        <input type="checkbox" id="pao" />
+        <label for="pao">Pão</label>
+<br>
+        <input type="checkbox" id="hamburguer" />
+        <label for="hamburguer">Hamburguer</label>
+<br>
+        <input type="checkbox" id="tomate" />
+        <label for="tomate">Tomate</label>
+<br>
+        <input type="checkbox" id="pepino" />
+        <label for="pepino">Pepino</label>
+<br>    
+        <input type="checkbox" id="queijo" />
+        <label for="queijo">Queijo</label>
+<br>
+        <input type="checkbox" id="bacon" />
+        <label for="bacon">Bacon</label>
+    <style>
+            #pao{
+                accent-color: rgb(240, 179, 88);
+            }
+            #hamburguer{
+                accent-color: rgb(151, 40, 40);
+            }
+            #tomate{
+                accent-color: rgb(255, 0, 0);
+            }
+            #pepino{
+                accent-color: rgb(5, 165, 5);
+            }
+            #queijo{
+                accent-color: rgb(228, 198, 0);
+            }
+            #bacon{
+                accent-color: rgba(227, 68, 68, 0.899);
+            }
+        </style>
+    </fieldset>
+<fieldset>
+    <legend>Escolha sua bebida</legend>
+        <font size = "3"><p>
+    <figure>
+        <input type="checkbox" id="coca"/>
+        <label for ="coca"><img src="coca.png" width="50" height="100"alt="Coca Cola"</label>
+        <figcaption>Coca Cola</figcaption>
+
+        <input type="checkbox" id="fanta"/>
+        <label for ="fanta"><img src="fanta-removebg-preview.png"width="50" height="100"alt="Fanta"</label>
+        <figcaption>Fanta</figcaption>
+        <input type="checkbox" id="sprite"/>
+        <label for ="sprite"><img src="sprite-removebg-preview.png" width="50" height="100"alt="Sprite"</label>
+        <figcaption>Sprite</figcaption>
+        <input type="checkbox" id="sucolaranja"/>
+        <label for ="sucolaranja"><img src="laranja-removebg-preview.png" width="50" height="100"alt = "Suco de Laranja"</label>
+        <figcaption>Suco de Laranja</figcaption>
+        <input type="checkbox" id="sucouva"/>
+        <label for ="suco de uva"><img src="uva-removebg-preview.png" width="50" height="100" alt= "Suco de Uva"</label>
+        <figcaption>Suco de Uva</figcaption>
+        <input type="checkbox" id="ice"/>
+        <label for ="ice"><img src="ice-removebg-preview.png" width="50" height="100"alt = "Ice Smirnoff"</label>
+        <figcaption>Ice Smirnoff</figcaption>
+        <input type="checkbox" id="agua sem gás"/>
+        <label for ="agua"><img src="agua.png" width="50" height="100"alt ="Água sem gás"</label><figcaption>Água sem gás</figcaption>
+</figure> </p></font>
+    <style>
+            #coca {
+                accent-color: rgb(197, 0, 0);
+            }
+            #fanta {
+                accent-color: rgb(255, 132, 0);
+            }
+            #sprite {
+                accent-color: rgb(17, 212, 17);
+            }
+            #sucolaranja {
+                accent-color: rgb(255, 195, 97);
+            }
+            #sucouva {
+                accent-color: rgb(108, 8, 108);
+            }
+            #ice {
+                accent-color: rgb(156, 223, 246);
+            }
+            #agua {
+                accent-color: rgb(17, 177, 230);
+            }
+
+        </style>
+    </fieldset>
+    <br>
+    <label for ="info"> Informações Adicionais</label>
+    <textarea id="info"></textarea>
+    <br>
+    <label for = "cidade">Informe a cidade</label>
+    <select id="cidade">
+        <option>Pedreira</option>
+        <option>Amparo</option>
+        <option>Jaguariuna</option>
+        <option>Monte Alegre</option>
+</select>
+    <p> 
+        <input type ="button" value="Enviar" onclick="alert("Pedido enviado!")"/>
+    </p>
+</form>
+    
+</body>
+</html>

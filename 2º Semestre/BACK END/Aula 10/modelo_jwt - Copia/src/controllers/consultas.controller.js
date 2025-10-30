@@ -1,16 +1,12 @@
-const dataPosts = require("../data/connection");
-const validate = require("../middlewares/auth");
-const {validaatendente} = require('../middlewares/validacargo');
-const {validaadm} = require('../middlewares/validacargo');
-const {consultas} = require("../routes/consultas.routes");
+const db = require("../data/connection");
 
-const criarconsulta = async (req, res) => {
-    const { id_paciente, id_medico, data_consulta, status } = req.body;
+const cadastrarconsulta = async (req, res) => {
+    const { id_paciente, id_medico, data, status } = req.body;
     if (!id_paciente || !id_medico || !data || !status) {
         return res.status(400).json({ message: "Todos os campos devem ser preenchidos." });
     }
     try {
-        await db.query("INSERT INTO consultas (id_paciente, id_medico, data, status) VALUES (?, ?, ?, ?)", [id_paciente, id_medico, data_consulta, status]);
+        await db.query("INSERT INTO consultas (id_paciente, id_medico, data, status) VALUES (?, ?, ?, ?)", [id_paciente, id_medico, data, status]);
         res.status(201).json({ message: "Consulta criada com sucesso." });
     } catch (error) {
         console.error("Erro ao criar consulta:", error);
@@ -28,7 +24,7 @@ const listarconsultas = async (req, res) => {
     }
 };
 
-const consultarID = async (req, res) => {
+const ConsultaPorID = async (req, res) => {
     const { id } = req.params;
     try {
         const [consulta] = await db.query("SELECT * FROM consultas WHERE id_consulta = ?", [id]);
@@ -85,9 +81,9 @@ const consultasPorcargo = async (req, res) => {
 };
 
 module.exports = {
-    criarconsulta,
+    cadastrarconsulta,
     deletarconsulta,
-    consultarID,
+    ConsultaPorID,
     listarconsultas,
     atualizarconsulta,
     consultasPorcargo

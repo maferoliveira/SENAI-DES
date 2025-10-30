@@ -1,0 +1,52 @@
+Qualidade de software:
+conformidades com requisitos
+dimensões da qualidade
+
+Metodologia:
+cascata
+modelo em v
+modelo incremental
+
+A importância da metodologia de gerenciamento de projetos: 
+ela proporciona estrutura e clareza, permitindo a organização, o planejamento, e o controle eficaz de todas as etapas do projeto, o que resulta em melhor desempenho e menores riscos
+
+Escopo:
+define claramente o que será entregue pelo projeto incluindo limites, entregas principais e critérios de aceitação além de especificar o que esta fora do projeto, também ajuda a definir oq esta fora do alcance do projeto, evitando retrabalhos
+
+Objetivos:
+projetos devem ser claros e alinhados com as expectativas das partes interessadas. (Revisão continua)
+
+Riscos:
+identificar, avaliar e mitigar.
+permitindo que você (e a equipe) esteja preparado para surpresas e maximizar o controle sobre o projeto
+
+Cronograma:
+Organiza tempo e estipula datas e entregas. definindo marcos importantes. equipes devem estar alinhadas e acessível a todos
+
+Recursos:
+equipe, materiais, equipamentos e infraestruturas( começo de projeto tem que ter gabaritar essa lista)
+
+Custos:
+manter o controle e monitorar os gastos, garantindo q o orçamento não ultrapasse e permita correções em tempo
+
+EAP - estrutura analítica do projeto:
+divide o projeto em menores partes, pacotes de trabalho, cada um fica com uma parte
+
+COMPONENTES ANALISE DE RISCOS:
+Alinhamento com as partes interessadas:
+assegura que as expectativas das partes interessadas sejam atendidas, ajuda a avaliar oq será relevante e viável no projeto, considerando q pode ocorrer mudanças ao longo do projeto
+
+Consequências da falta de revisão:
+a falta de revisão e adaptação dos objetivos podem levar ao desvio de foco, frustação entre partes interessadas e até mesmo ao fracasso do projeto, portanto, é imprescindível para manter a aliança e eficiência na execução do projeto
+
+Identificação, avaliação e mitigação de riscos:
+"oq acontece se minha internet parar? o projeto para?" entender quais problemas e como podem impactar, avaliar níveis dos riscos e elaborar estratégias para reduzir probabilidade de ocorrência
+
+Definição de prazos:
+datas de inicio e fim são fundamentais para a conclusão do projeto, quando o cronograma é bem estruturado
+
+Marcos importantes ou milestones:
+são pontos críticos que indicam o progresso do projeto, ajudam a equipe monitorar a evolução 
+
+Recursos:
+os recursos de um projeto abrangem recursos humanos, materiais, equipamentos e infraestrutura, sendo essencial pra garantir a produtividade

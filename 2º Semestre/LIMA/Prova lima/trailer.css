@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Felix Titling;
+    background: #76b36d;
+    line-height: 3;
+}
+.topo-voltar {
+    position: fixed;
+    z-index: 5;
+    font-size: small;
+    font-weight: bold;
+    color: #def4da;
+    padding: 2px 2px;
+    top: 10px;
+    left: 10px;
+    background-color: #68a260;
+    border-radius: 3.5px;
+    box-shadow: 0 4px 8px #3239321a;
+}
+.topo-voltar a{
+    color: #def4da;
+}
+.topo-voltar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px #00000033;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a{
+    color: #49030f;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header {
+    position: relative;
+    background: #1b5112;
+    margin-bottom: 100px;
+    box-shadow: #2a753a;
+    font-size: 0.5rem; 
+    align-items: center;    
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1px;
+
+}
+header h2{
+    color: #c6d5c9;
+    padding: 10px 20px;
+    margin: auto;
+    font-style: normal;
+    box-shadow: #fbc3dd;
+    font-size: 2.5rem;
+    display: flex;
+  justify-content: center; 
+  align-items: center;     
+  flex-direction: column;
+}
+h1 {
+    flex: 1;
+    display: flex;
+  justify-content: center; 
+  align-items: center;     
+  flex-direction: column;
+    font-size: 1.5rem;
+    color: #06320f;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.video-filme {
+    position: absolute;     
+    top: 0;                 
+    right: 0;               
+    width: 500px;           
+    height: 300;            
+    object-fit: contain;      
+    border: none;             
+    border-radius: 0;      
+    background: none;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(56, 2, 25);
+    text-decoration: none;
+    transition: color 0.1s ease;
+}
+
+nav ul li a:hover {
+    color: #49030f;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgb(79, 9, 28);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: none;
+}
+
+p {
+    color: #b9cebd;
+}
+
+.card{
+    width: 800px;
+    height: 400px;
+    max-width: 60%;
+    margin: 0 auto;
+    background: #15520c;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0 4px 8px #23692e;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.cardtitulo {
+    background: none;
+    border-radius: 3px;
+    padding: 1rem;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

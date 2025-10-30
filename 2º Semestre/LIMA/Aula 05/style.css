@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Britannic;
+    background: #f4f4f4;
+    line-height: 1.6;
+}
+header{
+    background: #480826;
+    color:rgb(134, 41, 95);
+    padding: 1rem 0;
+    text-align: center;
+}
+header h1{
+    margin-bottom: 0.5rem;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a{
+    color: azure;
+    text-decoration: none;
+    transition: color 0.1s ease;
+}
+nav ul li a:hover{
+    color: rgb(137, 39, 83);
+    cursor: pointer;
+}
+section{
+    padding: 2rem;
+    margin: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(136, 36, 84);
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+h2{
+    margin-bottom: 1rem;
+}
+.sobre-mim{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.foto-perfil{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2.5px solid #530a25;
+}
+.sobre-informacoes{
+    flex: 1;
+}
+.sobre-informacoes h2{
+    margin-bottom: 0.5rem;
+}
+.sobre-informacoes p{
+    font-size: 1rem;
+    color: #47101d;
+}
+.cards{
+    display: flex;
+    gap: 1rem;
+}
+.card{
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0 4px 8px rgb(193, 46, 85);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover{
+transform: scale(1.05);
+box-shadow: 0 8px 16px rgb(121, 5, 50);
+}
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hobby{
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle, rgb(224, 182, 196)0%, rgb(201, 145, 157)100%);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgb(193, 46, 85);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 1rem;
+}
+.hobby:hover{
+    transform: scale(1.05);
+    box-shadow:0 8px 16px rgb(121, 5, 50) ;
+}
+.hobby i{
+    font-size: 2rem;
+    color:rgb(121, 5, 50);
+}
+.hobby p{
+    color:#4d0a1a;
+}
+.hobby h3{
+    color: #4d0a1a;
+    margin-bottom: 0.5rem;
+}

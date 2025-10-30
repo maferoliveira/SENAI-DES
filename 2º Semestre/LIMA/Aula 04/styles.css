@@ -1,0 +1,78 @@
+body {
+background: url('./fundob.jpg') no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+header{
+    background-color: rgb(57, 34, 11);
+    padding: 10px 0;
+    text-align: center;
+
+}
+header h1{
+    margin: 0;
+    font-family: Courier;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(187, 121, 94);
+}
+nav ul li{
+    list-style: none;
+    padding: 0 40px;
+    display: inline;
+    margin: 0 10px;
+    text-align: center;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: monospace;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(187, 121, 94);
+}
+ .banner{
+    text-align: center;
+    background-color: rgb(83, 50, 38);
+    padding: 40px 0;
+}
+ section {
+    font-family: Courier;
+    padding: 20;
+    margin: 0 10px;
+    text-align: center;
+ }
+ .cartao {
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(144, 104, 79);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+    background-color: rgb(117, 83, 56);
+    box-shadow: 0 4px 8 px rgb(17, 66, 10);
+    transition: 0,5s ease,box-shadow 0,5s ease;
+    
+ }
+ .cartao:hover{
+    transform:translateZ(0px);
+    box-shadow: 0 10px 20px rgb(183, 133, 116);
+ }
+ .cartao img{
+    width: 100%;
+    border-radius: 10px;
+ }
+ #titulo{
+    color:rgb(75, 31, 16);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    background-color: BurlyWood;
+    box-shadow: 0 4px 8px rgb(203, 167, 159);
+ }
